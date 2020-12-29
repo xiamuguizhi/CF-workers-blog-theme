@@ -1,135 +1,334 @@
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="zh-CN">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="zh-CN">
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="zh-CN">
- <!--<![endif]-->
- <head> 
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <link rel="profile" href="http://gmpg.org/xfn/11" /> 
-  <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico" />
-  <link rel="Shortcut Icon" href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico">
-  <title><!--{title}--></title> 
+<html lang="cn">
+
+<head>
+  <meta name="generator" content="Hexo 3.9.0">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="keywords" content="<!--{opt.keyWords}-->" />
-  <meta name="description" content="<!--{opt.siteDescription}-->" />
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" /> 
-  <link rel="dns-prefetch" href="//s.w.org" /> 
+  <meta name="description" content="<!--{opt.siteDescription}-->">
+  <link rel="alternate" href="/default" title="!--{title}-->">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+  <link rel="stylesheet" type="text/css" href="https://d2fan.com/css/style.css?v=1.1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cdn.jsdelivr.net\/gh\/gdtool\/zhaopp\/cfblog\/wp-emoji-release.min.js?ver=5.6"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script> 
-  <style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style> 
-  <link rel="stylesheet" id="wp-block-library-css" href="https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/block-library/style.min.css?ver=5.6" type="text/css" media="all" /> 
-  <style id="md-style-inline-css" type="text/css">
- .gfm-task-list { border: 1px solid transparent; list-style-type: none; } .gfm-task-list input { margin-right: 10px !important; } .copy-button { cursor: pointer; border: 0; font-size: 12px; text-transform: uppercase; font-weight: 500; padding: 3px 6px 3px 6px; background-color: rgba(255, 255, 255, 0.6); position: absolute; overflow: hidden; top: 5px; right: 5px; border-radius: 3px; } .copy-button:before { content: ""; display: inline-block; width: 16px; height: 16px; margin-right: 3px; background-size: contain; background-image: url("data:image/svg+xml,%3Csvg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' width=\'16px\' height=\'16px\' viewBox=\'888 888 16 16\' enable-background=\'new 888 888 16 16\' xml:space=\'preserve\'%3E %3Cpath fill=\'%23333333\' d=\'M903.143,891.429c0.238,0,0.44,0.083,0.607,0.25c0.167,0.167,0.25,0.369,0.25,0.607v10.857 c0,0.238-0.083,0.44-0.25,0.607s-0.369,0.25-0.607,0.25h-8.571c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-2.571 h-4.857c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-6c0-0.238,0.06-0.5,0.179-0.786s0.262-0.512,0.428-0.679 l3.643-3.643c0.167-0.167,0.393-0.309,0.679-0.428s0.547-0.179,0.786-0.179h3.714c0.238,0,0.44,0.083,0.607,0.25 c0.166,0.167,0.25,0.369,0.25,0.607v2.929c0.404-0.238,0.785-0.357,1.143-0.357H903.143z M898.286,893.331l-2.67,2.669h2.67V893.331 z M892.571,889.902l-2.669,2.669h2.669V889.902z M894.321,895.679l2.821-2.822v-3.714h-3.428v3.714c0,0.238-0.083,0.441-0.25,0.607 s-0.369,0.25-0.607,0.25h-3.714v5.714h4.571v-2.286c0-0.238,0.06-0.5,0.179-0.786C894.012,896.071,894.155,895.845,894.321,895.679z M902.857,902.857v-10.286h-3.429v3.714c0,0.238-0.083,0.441-0.25,0.607c-0.167,0.167-0.369,0.25-0.607,0.25h-3.714v5.715H902.857z\' /%3E %3C/svg%3E"); background-repeat: no-repeat; position: relative; top: 3px; } pre { position: relative; } pre:hover .copy-button { background-color: rgba(255, 255, 255, 0.9); } 
-</style> 
-  <link rel="stylesheet" id="themonic-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all" /> 
-  <link rel="stylesheet" id="themonic-style-css" href="https://cdn.jsdelivr.net/gh/gdtool/cloudflare-workers-blog@master/themes/default/style.css" type="text/css" media="all" /> 
-  <link rel="stylesheet" id="custom-style-css" href="https://cdn.jsdelivr.net/wp/themes/iconic-one/2.1.8/custom.min.css?ver=5.6" type="text/css" media="all" /> 
+    var themeConfig = {
+      fancybox: {
+        enable: false
+      },
+    };
+  </script>
+
+  <title><!--{title}--></title>
+</head>
+
+<body>
+  <div id="page">
+    <header id="masthead">
+      <div class="site-header-inner">
+        <h1 class="site-title">
+          <a href="/." class="logo"><!--{title}--></a>
+        </h1>
+
+        <nav id="nav-top">
+
+          <ul id="menu-top" class="nav-top-items">
+
+            <li class="menu-item">
+              <a href="/archives">
 
 
-  <meta name="generator" content="WordPress 5.6" /> 
-  <style type="text/css" id="wp-custom-css">
-			@media (max-width: 768px) {
-	#secondary {
-		display:none !important;
-	}
-	#menu-top{
-		display:none !important;
-	}
-	.site-content {
-		float: left;
-		width: 92%;
-		padding: 30px 2% 0 1%;
-	}
-	.site-description{
-		display:none !important;
-	}
-	.io-title-description {
-		display: inline-block;
-		margin: 17px 0;
-		padding: 0px 0;
-		float: none;
-	}
-	.wrapper {
-		border: 1px solid #16a1e7 !important;
-	}
-}		</style> 
-<link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.3.2/styles/tomorrow-night-bright.min.css">
-<script src='https://cdn.staticfile.org/highlight.js/10.3.2/highlight.min.js'></script>
-<!--{opt.codeBeforHead}-->
+                Archives
 
- </head> 
- <body class="home blog logged-in custom-font-enabled single-author hfeed"> 
-  <div id="page" class="site"> 
-   <header id="masthead" class="site-header" role="banner"> 
-    <div class="io-title-description"> 
-     <a href="/" title="<!--{opt.siteName}-->" rel="home"><!--{opt.siteName}--></a> 
-     <br ...="" /> 
-     <a class="site-description"><!--{opt.siteDescription}--></a> 
-    </div> 
-	<!--{widgetMenu.html}-->
+              </a>
+            </li>
 
-    <!-- #site-navigation --> 
-    <div class="clear"></div> 
-   </header>
-   <!-- #masthead --> 
-   <div id="main" class="wrapper"> 
-    <div id="primary" class="site-content"> 
-	 <!--{articleList.html}-->
-	 <!--{articleSingle.html}-->
-     <!-- #上面俩,二选一 --> 
+            <li class="menu-item">
+              <a href="/about">
+
+
+                About
+
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+
+    </header>
+    <div id="content">
+
+      <div id="primary" class="home">
+
+
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+
+              <a class="post-link" href="/posts/reading-records-in-august-and-september/">2019年8月、9月读书记录</a>
+
+            </h1>
+
+            <time class="post-time">
+              Oct 03 2019
+            </time>
+          </header>
+
+
+
+
+          <div class="post-excerpt post-content">
+
+
+
+
+
+
+            <p>为什么爱情、死亡和战争是人类文学史上三个最重要的主题？</p>
+            <p>我想是因为这三件事物都会将一个无法内化的绝对他者、一种无法掌控的陌生状态强行置入个体的生命。—— 《我执》</p>
+          </div>
+
+
+
+
+        </article>
+
+
+
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+
+              <a class="post-link" href="/posts/reading-records-in-june-and-july-2019/">2019年6月、7月读书记录</a>
+
+            </h1>
+
+            <time class="post-time">
+              Aug 01 2019
+            </time>
+          </header>
+
+
+
+
+          <div class="post-excerpt post-content">
+
+
+
+
+
+
+            <p>新闻记者是将真实生活的困境转化成公共讨论的传递者，是把被遮蔽与忽略的事实呈现在公共空间的人。双重危机阻碍着我们。—— 《时代的稻草人》</p>
+          </div>
+
+
+
+
+        </article>
+
+
+
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+
+              <a class="post-link" href="/posts/reading-records-in-april-and-may-2019/">2019年4月、5月读书记录</a>
+
+            </h1>
+
+            <time class="post-time">
+              Jun 03 2019
+            </time>
+          </header>
+
+
+
+
+          <div class="post-excerpt post-content">
+
+
+
+
+
+
+            <p>文本中嵌套文本，故事中嵌套故事……挑战了读者对于叙事线索的接受能力。撒旦折腾莫斯科的故事以及耶路撒冷彼拉多的故事互相映衬，后者更是前者的引子。—— 《大师和玛格丽特》 书评</p>
+          </div>
+
+
+
+
+        </article>
+
+
+
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+
+              <a class="post-link" href="/posts/reading-records-in-march-2019/">2019年3月读书记录</a>
+
+            </h1>
+
+            <time class="post-time">
+              Apr 02 2019
+            </time>
+          </header>
+
+
+
+
+          <div class="post-excerpt post-content">
+
+
+
+
+
+
+            <p>男人和女人一样，也有喜好和厌恶。甚至在某一点上比女人还要厉害。男人好像喜欢似的按下 OK按钮。不是出于狡猾，而是顾及对方的感受。自己被甩没关系，而女方被甩，就觉得对方很可怜。—— 《留白》</p>
+          </div>
+
+
+
+
+        </article>
+
+
+
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+
+              <a class="post-link" href="/posts/reading-records-in-january-and-february-2019/">2019年1月、2月读书记录</a>
+
+            </h1>
+
+            <time class="post-time">
+              Feb 07 2019
+            </time>
+          </header>
+
+
+
+
+          <div class="post-excerpt post-content">
+
+
+
+
+
+
+            <p>2019年新年之后，自己悄悄立下了一个新年计划：每周看一本书。</p>
+          </div>
+
+
+
+
+        </article>
+
+
+
+        <nav class="pagination">
+
+
+          <a class="next" href="/page/2/">
+            <span class="next-text">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+
+        </nav>
+
+      </div>
+      <div id="secondary">
+
+
+
+
+
+        <section id="tags" class="widget-area widget_tags">
+          <h3 class="widget-title">Tags</h3>
+          <ul class="tag-list">
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span
+                class="tag-list-count">1</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/WordPress/">WordPress</a><span
+                class="tag-list-count">1</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/Sitelog/">Sitelog</a><span
+                class="tag-list-count">1</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/读书/">读书</a><span
+                class="tag-list-count">6</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/书单/">书单</a><span
+                class="tag-list-count">6</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span
+                class="tag-list-count">1</span></li>
+            <li class="tag-list-item"><a class="tag-list-link" href="/tags/生活/">生活</a><span
+                class="tag-list-count">1</span></li>
+          </ul>
+        </section>
+
+
+      </div>
+
+
     </div>
-    <!-- #primary --> 
-    <div id="secondary" class="widget-area" role="complementary"> 
-     <!--{widgetRecently.html}-->
 
-     <!--{widgetCategory.html}-->
+    <footer id="colophon"><span class="copyright-year">
 
-     <!--{widgetTags.html}-->
-	 
-	 <!--{opt.widgetOther}-->
-	<aside id="meta-2" class="widget widget_meta"><p class="widget-title">链接</p>
-		<ul>
-			<li><a href="/admin/">管理站点</a></li>
-		</ul>
-	</aside>
+        &copy;
+
+        2014 -
+
+        2019
+        <span class="footer-author">Frost Fan.</span>
+        <span class="power-by">
+          Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link"
+            href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+        </span>
+      </span>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
     </div>
-    <!-- #secondary --> 
-   </div>
-   <!-- #main .wrapper --> 
-   <!-- #colophon --> 
-   <div class="site-wordpress"> 
-	<!--{opt.copyRight}-->
-   </div>
-   <!-- .site-info --> 
-   <div class="clear"></div> 
   </div>
-  <!-- #page --> 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/wp/themes/iconic-one/2.1.8/js/selectnav.min.js?ver=1.0" id="themonic-mobile-navigation-js"></script> 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.6/wp-includes/js/clipboard.min.js?ver=5.6" id="clipboard-js"></script> 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/wp-embed.min.js?ver=5.6" id="wp-embed-js"></script> 
-	<script>
-		hljs.initHighlightingOnLoad();//代码高亮
-	</script>
-<!--{opt.codeBeforBody}-->
-	</body>
+
+
+  <script type="text/javascript">
+    var disqus_shortname = 'd2fan';
+    var disqus_identifier = 'index.html';
+
+    var disqus_title = "";
+
+
+    var disqus = {
+      load: function disqus() {
+        if (typeof DISQUS !== 'object') {
+          (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+      }
+    }
+  </script>
+
+
+
+  <script type="text/javascript" src="https://d2fan.com//lib/jquery/jquery-3.1.1.min.js"></script>
+
+  <script type="text/javascript" src="https://d2fan.com//js/src/theme.js?v=1.1"></script>
+  <script type="text/javascript" src="https://d2fan.com//js/src/bootstrap.js?v=1.1"></script>
+
+</body>
+
 </html>
